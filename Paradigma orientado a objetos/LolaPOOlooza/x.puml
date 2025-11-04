@@ -1,0 +1,78 @@
+@startuml
+class Artista {
+- int cantAsistentes
+- String diaQueToca
+- Escenario dondeToca
++ int getCantAsistentes()
++ String getDiaQueToca()
++ Escenario getDondeToca()
++ void sumarAsistentes()
+}
+
+
+class TicketPlus {
++ boolean entradaValida(Artista)
+}
+
+abstract class Ticket {
++ {abstract}boolean entradaValida(Artista)
++ void verArtista(Artista)
+}
+
+class TicketDePrensa {
++ boolean entradaValida(Artista)
+}
+
+class Main {
++ {static} void main(String[])
+}
+
+class TicketFan {
+- Artista artistaFan
++ boolean entradaValida(Artista)
++ Artista getArtistaFan()
+}
+
+
+class TicketGeneral {
+- String diaAsociado
++ boolean entradaValida(Artista)
++ String getDiaAsociado()
+}
+
+
+class TicketB3 {
+- int contadorConciertos
++ boolean entradaValida(Artista)
++ void verArtista(Artista)
++ int getContadorConciertos()
+}
+
+
+class TicketCustom {
+- HashSet<Artista> listaArtitas
++ boolean entradaValida(Artista)
++ void añadirArtista(Artista)
+}
+
+
+class TicketB7 {
++ boolean entradaValida(Artista)
+}
+
+class Escenario {
+- boolean tieneLugarDePrensa
++ boolean isTieneLugarDePrensa()
+}
+
+
+
+
+Ticket <|-- TicketPlus
+Ticket <|-- TicketDePrensa
+Ticket <|-- TicketFan
+Ticket <|-- TicketGeneral
+Ticket <|-- TicketB3
+Ticket <|-- TicketCustom
+TicketB3 <|-- TicketB7
+@enduml

@@ -1,11 +1,16 @@
 public class Reactor {
-    private int cantDeEnergia;
+    private int cantidadDeEnergiaDeReactor;
 
-    public Reactor(int cantDeEnergia) {
-        this.cantDeEnergia = cantDeEnergia;
+    public Reactor(int cantidadDeEnergiaDeReactor) {
+        this.cantidadDeEnergiaDeReactor = cantidadDeEnergiaDeReactor;
     }
 
-    public int getEnergia() {
-        return cantDeEnergia;
+    public int getCantidadDeEnergiaDeReactor() {
+        return cantidadDeEnergiaDeReactor;
     }
+
+    public void setCantidadDeEnergiaDeReactor(int cantidadDeEnergiaDeReactor) {
+        this.cantidadDeEnergiaDeReactor = cantidadDeEnergiaDeReactor;
+    }
+
 }

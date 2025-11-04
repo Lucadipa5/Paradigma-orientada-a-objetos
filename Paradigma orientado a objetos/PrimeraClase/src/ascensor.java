@@ -19,17 +19,4 @@ public class ascensor {
     public int enQuePisoEstas(){
         return pisoActual;
     }
-    public void ingresa(Persona persona){
-        pisoActual = persona.pisoActual;
-        persona.alfroInAscensor = true;
-    }
-    public void comenzarRecorrido(Persona persona){
-        puertaAbierta = false;
-        cambiarPisos(persona.pisoQueQuieroIr);
-    }
-    public void finalizarRecorrido(Persona persona){
-        persona.alfroInAscensor = false;
-        persona.pisoActual = persona.pisoQueQuieroIr;
-        pisoActual = persona.pisoQueQuieroIr;
-    }
 }

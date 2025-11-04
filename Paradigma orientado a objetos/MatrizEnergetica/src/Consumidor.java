@@ -1,14 +1,15 @@
 public class Consumidor {
+    private int cantidadQueConsume;
 
-
-    private int cantDeEnergiaConsumida;
-
-    public Consumidor(int cantDeEnergiaConsumida) {
-
-
-        this.cantDeEnergiaConsumida = cantDeEnergiaConsumida;
+    public Consumidor(int cantidadQueConsume) {
+        this.cantidadQueConsume = cantidadQueConsume;
     }
-    public int getCantDeEnergiaConsumida() {
-        return cantDeEnergiaConsumida;
+
+    public int getCantidadQueConsume() {
+        return cantidadQueConsume;
+    }
+
+    public void actualizarCantidadQueConsume(int cantidadQueConsume) {
+        this.cantidadQueConsume = cantidadQueConsume;
     }
 }

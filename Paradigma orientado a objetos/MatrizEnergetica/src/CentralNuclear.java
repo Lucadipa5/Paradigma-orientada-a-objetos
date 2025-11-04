@@ -1,35 +1,35 @@
 import java.util.ArrayList;
 
 public class CentralNuclear extends CentralProductora{
-    private ArrayList<Reactor> reactores = new ArrayList<>();
-    private int cantEmision;
-
-    public CentralNuclear(Persona propietario) {
-        super(propietario);
-        this.cantEmision = 41;
+    ArrayList<Reactor> reactores = new ArrayList<>();
+    private int cantidadDeEmision;
+    public CentralNuclear(int cantMaxima, Persona propietario) {
+        super(cantMaxima,propietario);
+        this.cantidadDeEmision = 41;
     }
 
     @Override
-    public int getCantidadEnergia() {
-        int cantidad = 0;
+    public int getCantidadQueAporta() {
+        int totalDeAporte = 0;
         for (Reactor reactor : reactores) {
-            cantidad = cantidad + reactor.getEnergia();
+            totalDeAporte +=  reactor.getCantidadDeEnergiaDeReactor();
         }
-        return (cantidad-5);
+        return totalDeAporte-5;
     }
-    public void añadirReactor(int energia){
+
+    public void añadirReactor(Reactor reactor){
         if(reactores.size()<5){
-            reactores.add(new Reactor(energia)); // DUda aca, por que tengo que poner new??
+            reactores.add(reactor);
         }
-    }
-
-
-    public int getCantEmision() {
-        return cantEmision;
     }
 
     @Override
     public int getNivelDeEmision() {
-        return reactores.size()*getCantEmision();
+        return reactores.size()*getCantidadDeEmision();
     }
+
+    private int getCantidadDeEmision() {
+        return cantidadDeEmision;
+    }
+
 }
