@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Paradigma orientado a objetos.iml" filepath="$PROJECT_DIR$/.idea/Paradigma orientado a objetos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimeraClase/PrimeraClase.iml" filepath="$PROJECT_DIR$/PrimeraClase/PrimeraClase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/segundaClase/segundaClase.iml" filepath="$PROJECT_DIR$/segundaClase/segundaClase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/terceraClase/terceraClase/terceraClase.iml" filepath="$PROJECT_DIR$/terceraClase/terceraClase/terceraClase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/terceraClase/terceraClaseXD/terceraClaseXD.iml" filepath="$PROJECT_DIR$/terceraClase/terceraClaseXD/terceraClaseXD.iml" />
+    </modules>
+  </component>
+</project>
